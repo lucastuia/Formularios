@@ -6,20 +6,34 @@
     <title>cadastro de pessoas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Cadastro de pessoas</h1>
-    <hr>
-      <form action="">
-        <label for="text">nome completo</label>
-        <input type="text">
+<body id="cadastro">
+  <div class="conteiner">
+    <div class="header">
+      <h1>Cadastro</h1>
+    </div>
+
+      <form id="form" action="form">
+      <div class="form-content">
+        <label for="text">Nome completo</label>
+        <input type="text" id="name" placeholder="Digite seu nome completo">
+      </div>
+      <div class="form-content">
         <label for="text">Data de nascimento</label>
-        <input type="date">
+        <input type="date" id="birthday">
+      </div>
+      <div class="form-content">
         <label for="text">Email</label>
-        <input type="text">
-        <label for="text">telefone</label>
-        <input type="text">
+        <input type="text" id="Email" placeholder="Digite seu Email">
+      </div>
+      <div class="form-content">
+        <label for="text">Telefone</label>
+        <input type="text" id="Telefone" placeholder="Digite seu Telefone">
+      </div>
+      <div class="form-content">
         <label for="text">Endereço</label>
-        <input type="text">
+        <input type="text" id="Endereço">
+      </div>
+      <div class="form-content">
         <label for="text">Estado</label>
         <select name="" id="">
             <option value="">Rio Grande do Sul</option>
@@ -29,13 +43,15 @@
             <option value="">Rio de Janeiro</option>
             <option value="">Minas Gerais</option>
         </select>
-        <label for="text">cidade</label>
-        <input type="text">
-        <label for="text"></label>
-        <input type="submit" value="enviar">
+      </div>
+      <div class="form-content">
+        <label for="text">Cidade</label>
+        <input type="text" id="nome7" name="Cidade">
+        <input type="button" value="Cadastrar" id="nome1">
+      </div>
+      </form>  
 
-      </form>    
-
+</div>
 </form>
 </body>
 </html>
