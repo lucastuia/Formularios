@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <title>Busca</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      body{
+        padding: 0;
+        margin: 0;
+        background: #00a8ff;
+      }
+      .search-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #353b48;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+      }
+      .search-btn{
+        color: #00a8ff;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #353b48;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+      }
+      .search-txt{
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4px;
+        line-height: 40px;
+        width: 0px;
+      }
+      .search-box:hover > .search-txt{
+        width: 240px;
+        padding: 0 6px;
+      }
+      .search-box:hover > .search-btn{
+        background: white;
+      }
+  </style>
 </head>
 <body>
-    <h1>Busca</h1>
-    <hr>
-    <form action="">
-          
-       
-        <div class="">
-            <label class="md-label md-input__label" for="pillSearchInput">
-            </label>
-
-            <div class="label">
-              <span class="span">
-                <i
-                  class="i"
-                  style="font-size: 20px;"
-                ></i>
-              </span>           
-              <input
-                class="input"
-                tabindex="0"
-                type="text"
-                id="input"
-                name="input"
-                value=""
-                placeholder="serch..."
-              />
-              <button id="botão">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            </div>
-          </div>
-        
-
-        
-                  
-
-
-    </form>
+   <div class="search-box">
+    <input class="search-txt" type="text" name="" placeholder="Pesquisar">
+    <a class="search-btn" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+    
+   </div>
 </body>
 </html>
